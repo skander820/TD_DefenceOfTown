@@ -73,9 +73,6 @@ public class Turret : MonoBehaviour {
             UpdateEnemys ();
         }
         if (enemys.Count > 0) {
-            foreach (GameObject enemy in enemys) {
-                Debug.LogWarning (enemy);
-            }
             GameObject bullet = GameObject.Instantiate (bulletPrefab, firePosition.position, firePosition.rotation);
             bullet.GetComponent<Bullet> ().damage = (int) damageRate;
 

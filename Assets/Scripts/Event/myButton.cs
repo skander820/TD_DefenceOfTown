@@ -10,7 +10,7 @@ public class myButton : MonoBehaviour
         GetComponent<Button>().onClick.AddListener(() =>
         {
             EventCenter.BroadCast<string>(EventType.ShowText,"你好");
-            Debug.Log(EventCenter.eventTable);
+            //Debug.Log(EventCenter.eventTable);
         });
     }
 

@@ -44,7 +44,6 @@ public class Enemy : MonoBehaviour {
         if (hp <= 0) return;
         hp -= damage;
         hpSlider.value = (float)hp / totalHp;
-        Debug.Log(hp);
         if (hp <= 0)
         {
             Die();
